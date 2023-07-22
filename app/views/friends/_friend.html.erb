@@ -1,27 +1,35 @@
 <div id="<%= dom_id friend %>">
-  <p>
-    <strong>First name:</strong>
-    <%= friend.first_name %>
-  </p>
+  <div class="card">
+  <img src="app\assets\images\226-2261312_employee-clipart-employee-icon-employee-management-system-logo.png" class="card-img-top" alt="404 Not found">
 
-  <p>
-    <strong>Last name:</strong>
-    <%= friend.last_name %>
-  </p>
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">
+      <p>
+      <strong>First name:</strong>
+      <%= friend.first_name %>
+      </p>
 
-  <p>
-    <strong>Email:</strong>
-    <%= friend.email %>
-  </p>
+      <p>
+        <strong>Last name:</strong>
+        <%= friend.last_name %>
+      </p>
 
-  <p>
-    <strong>Phone:</strong>
-    <%= friend.phone %>
-  </p>
+      <p>
+        <strong>Email:</strong>
+        <%= friend.email %>
+      </p>
 
-  <p>
-    <strong>Twitter:</strong>
-    <%= friend.twitter %>
-  </p>
+      <p>
+        <strong>Phone:</strong>
+        <%= friend.phone %>
+      </p>
+    </p>
+    <%= link_to "Edit this friend", edit_friend_path(@friend),class:"btn btn-success" %> 
+    <%= button_to "Destroy this friend", @friend, method: :delete,class:"btn btn-danger" %>
+  </div>
+</div>
+
+</div>
 
 </div>

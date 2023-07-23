@@ -29,6 +29,11 @@
       <%= form.label :phone, style: "display: block",class:"form-label" %>
       <%= form.text_field :phone,class:"form-control", placeholder:"541xxx651" %>
     </div>
+    
+    <div class="mb-3">
+      <%= form.label :UserID, style: "display: block",class:"form-label" %>
+      <%= form.text_field :user_id,class:"form-control", value:current_user.id %>
+    </div>
 
     <div>
       <%= form.submit class:"btn btn-primary" %>
